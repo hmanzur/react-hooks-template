@@ -1,1 +1,0 @@
-# propiedapp-front
