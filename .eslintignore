@@ -1,0 +1,6 @@
+# Apps dir to ignore
+public/
+dist/
+node_modules/
+bin/
+tmp/
