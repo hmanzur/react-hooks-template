@@ -1,11 +1,11 @@
 import React from 'react'
 import {BrowserRouter, Route, Switch } from 'react-router-dom'
 
-import AuthRouter from './Modules/Auth/mixins/AuthRouter'
-import HomeView from './Modules/views/HomeView'
-import SignInView from './Modules/Auth/views/SignInView'
-import SignOutView from './Modules/Auth/views/SignOutView'
-import AdminView from './Modules/Admin/views/AdminView'
+import AuthRouter from './modules/auth/mixins/AuthRouter'
+import HomeView from './modules/views/HomeView'
+import SignInView from './modules/auth/views/SignInView'
+import SignOutView from './modules/auth/views/SignOutView'
+import AdminView from './modules/admin/views/AdminView'
 
 /**
  * App primary Component

@@ -12,4 +12,10 @@ describe('AuthRouter', () => {
 
     expect(AuthService.isAuthenticated).toBeFalsy()
   })
+
+  test('Non Authenticated', async () => {
+    AuthService.isAuthenticated = false
+
+    expect(AuthService.isAuthenticated).toBeFalsy()
+  })
 })

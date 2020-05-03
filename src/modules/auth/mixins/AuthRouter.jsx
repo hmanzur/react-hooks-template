@@ -3,7 +3,7 @@ import AuthService from '../services/AuthService'
 import {Redirect, Route} from 'react-router-dom'
 
 /**
- * Validate Access using simple Auth
+ * Validate Access using simple auth
  *
  * @class
  * @param {React.Component} Component to be rendered

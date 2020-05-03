@@ -19,5 +19,9 @@ describe('AuthService', () => {
 
   test('saveToken', async () => {
     expect(AuthService.saveToken).toBeDefined()
+
+    AuthService.saveToken('token')
+
+    expect(AuthService.token).toBe('token')
   })
 })

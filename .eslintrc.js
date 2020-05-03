@@ -1,10 +1,8 @@
 module.exports = {
   parserOptions: {
-    ecmaVersion: 2018,
     sourceType: "module"
   },
   env: {
-    jquery: false,
     browser: true,
     es6: true
   },
@@ -21,11 +19,13 @@ module.exports = {
   extends: [
     "react-app",
     "plugin:jsdoc/recommended",
+    "plugin:jquery/deprecated",
     "strongloop"
   ],
   plugins: [
     "html",
-    "jsdoc"
+    "jsdoc",
+    "jquery"
   ],
   rules: {
     'max-len': ["error", { "code": 150 }],
