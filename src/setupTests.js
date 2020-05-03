@@ -4,11 +4,7 @@
 // learn more: https://github.com/testing-library/jest-dom
 import '@testing-library/jest-dom/extend-expect'
 
-const localStorageMock = {
-  removeItem: jest.fn(),
-  getItem: jest.fn(),
-  setItem: jest.fn(),
-  clear: jest.fn()
-}
+import localStorage from './test/mock/localStorage'
 
-global['localStorage'] = localStorageMock
+
+global['localStorage'] = localStorage
