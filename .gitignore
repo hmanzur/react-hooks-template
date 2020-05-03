@@ -8,6 +8,8 @@
 
 # testing
 /coverage
+/eslint
+**/__snapshots__
 
 # production
 /build

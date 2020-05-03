@@ -1,12 +1,12 @@
-import Axios from "axios"
+import Axios from 'axios'
 
 export default class AuthService {
-  static async login(username, password) {
+  static async signIn(username, password) {
     return Axios.post(process.env.REACT_APP_ENDPOINT_API + 'login', {username, password})
   }
 
-  static signout() {
-    localStorage.clear();
+  static signOut() {
+    localStorage.clear()
     AuthService.isAuthenticated = false
   }
 

@@ -5,7 +5,7 @@ import AuthService from '../services/AuthService'
 const instance = axios.create({
   baseURL: process.env.REACT_APP_ENDPOINT_API,
   timeout: 5000
-});
+})
 
 // Interceptor all requests
 instance.interceptors.request.use(config => {
@@ -20,7 +20,7 @@ instance.interceptors.request.use(config => {
   }
 
   return config
-});
+})
 
 // Interceptor all responses
 instance.interceptors.response.use(response => response.data, error => Promise.reject(error))

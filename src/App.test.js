@@ -8,5 +8,4 @@ describe('App', () => {
 
     expect(wrapper).toBeTruthy()
   })
-
 })

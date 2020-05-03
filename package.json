@@ -25,6 +25,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "lint": "eslint .",
+    "lint:report": "eslint . -o ./eslint/coverage.html",
     "eject": "react-scripts eject"
   },
   "husky": {
@@ -34,7 +36,7 @@
   },
   "lint-staged": {
     "*/*.js": [
-      "eslint --fix",
+      "npm run lint",
       "cross-env CI=true react-scripts test --coverage --env=jsdom --findRelatedTests"
     ]
   },
